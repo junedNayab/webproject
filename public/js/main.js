@@ -15,13 +15,13 @@ const getInfo = async(event) =>{
     if(cityVal === ""){
         city_name.innerText = `Plz write the name before search`;
         datahide.classList.add('data_hide');
-        
+
     }else{
         try{
             let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=a6fd9ce81a492ff401ac828271f090ce`;
             const response = await fetch(url);
             const data = await response.json();
-            const arrData = [data];
+           const arrData = [data];
 
            city_name.innerText = `${arrData[0].name}, ${arrData[0].sys.country}`;
            temp_real_val.innerText = arrData[0].main.temp;

@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" :"node src/app.js"
-
+    "start": "node src/app.js"
   },
   "author": "Juned Nayab",
   "license": "ISC",
   "dependenciess": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  },
+  "dependencies": {
     "express": "^4.18.1",
     "hbs": "^4.2.0"
   }
